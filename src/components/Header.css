@@ -1,0 +1,55 @@
+.app_header {
+    background: transparent;
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_div{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 84px;   
+}
+.logo_div h1{
+  margin-left: 20px;
+  font-size: calc(10px + 2.3vw);
+}
+.logo{
+    height: 7.5vmin;
+    pointer-events: none;
+    border-radius: 50px;
+    margin-left: 25px;
+    width: 60px;
+    height: 60px;
+    background: url(jovadev.png);
+    background-size: cover;
+}
+
+.div_autor{
+  display: none;
+}
+  /*para pantallas menores a 700px*/
+@media screen and (max-width:700px){
+    #root{
+      min-width: 300px;
+    }
+    .logo_div h1{
+      margin-left: 10px;
+      font-size: calc(10px + 2.5vw);
+    }
+    .logo{
+      margin-left: 10px;
+    }
+    .div_autor{
+      display: inline-block;
+      border-top: 2px solid black;
+      color: black;
+    }
+    .div_autor a i{
+      font-size: 40px;
+    }
+}

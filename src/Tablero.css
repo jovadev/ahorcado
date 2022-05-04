@@ -1,0 +1,86 @@
+p span{
+    color: rgb(255, 54, 54);
+}
+canvas{
+    background-color: rgb(219, 219, 220);
+  }
+.container_canvas{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px
+}
+.div_panel{
+    padding: 20px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.mdark{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.btn{
+    color: white;
+    background-color: black;
+}
+.btn.dark{
+    color:black;
+    background-color:#A763F6;
+}
+.contenedor_abecedario h3{
+    margin: 0;
+    padding: 15px 0;
+}
+.abecedario{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    padding: 5px 0;
+}   
+.tablero_juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    padding-top: 20px;
+}
+.contenedor_adivinada_abecedario{
+    width: 700px;
+}
+.div_adivinada{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.div_mensaje_sin_palabras{
+    padding: 0 10px;
+}
+.div_mensaje_sin_palabras p{
+    font-weight: 500;
+}
+#btn_nuevo,#btn_respuesta{
+    padding: 10px;
+    border-radius: 10px;
+    font-style: normal;  
+}
+#btn_nuevo{
+    margin-right: 20px;
+}
+@media screen and (max-width: 750px) {
+    .contenedor_adivinada_abecedario{
+        width: 440px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .contenedor_adivinada_abecedario{
+        width: 330px;
+    }
+    #btn_nuevo:hover,#btn_respuesta:hover{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

@@ -1,0 +1,111 @@
+.modal_agregar{
+    position: fixed;
+    width: 80%;
+    transition: all 0.4s;
+    top:-130%;
+    width: 100%;
+    z-index: 999;
+    height: calc(100% - 90px);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal_agregar.show{
+    top:90px;
+}
+.div_seccion_agrega{
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(12, 172, 220);
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    overflow: auto;
+}
+.div_seccion_agrega button, input[type="submit"]{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+}
+.div_no_words_message p{
+    font-weight: 700;
+}
+.lista_palabras{
+       border-top: 1px solid black;
+       margin-top: 10px;
+}
+.div_agrega{
+    
+    margin: 5px 5px 50px 5px;
+
+    position: relative;
+}
+.div_agrega button:hover,.div_seccion_agrega input[type="submit"]:hover{
+    cursor: pointer;
+    transform: translateY(0);
+}
+.div_agrega_buttons div{
+    padding: 25px 0 10px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+}
+.lista_palabras ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    overflow: auto;
+}
+.lista_palabras ul li{
+    list-style: none;
+    border: 1px solid black;
+    width: 40%;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    word-wrap: break-word;
+}
+.lista_palabras ul li button{
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    border-style: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 0;
+}
+.lista_palabras ul li button:hover{
+    color: black;
+}
+.lista_palabras ul li:hover{
+    background-color: #cdcdcd;
+}
+.div_agrega form .entrada_palabra{
+    border-radius: 5px;
+    height: 25px;
+}
+
+@media screen and (max-width:800px){
+    .lista_palabras ul li{
+        width: 90%;
+    }
+    .div_seccion_agrega{
+        width: 90vw;
+        top: 84px;
+    }
+    #add-warning{
+        font-size: 0.7em;
+    }
+    .div_agrega_buttons div{
+        width: 80vw;
+    }
+}

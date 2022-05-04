@@ -1,0 +1,47 @@
+.casilla {
+  height: 55px;
+  width: 55px;
+  border-bottom: 5px solid black;
+  padding: 0;
+  font-weight: 600;
+  margin:5px;
+  border-radius: 5px;
+}
+.abc{
+  font-size: 1.8em;
+  background: rgb(253, 211, 133);
+  color: green;
+}
+.ficha{
+  background: rgb(235, 215, 215);
+  color: brown;
+}
+.ficha h1{
+  margin: 5px;
+  font-size: 2em;
+}
+@media screen and (max-width: 750px) {
+  .casilla {
+    height: 45px;
+    width: 40px;
+    margin: 0px 3px 5px 3px;
+  }
+  .ficha h1{
+    font-size: 1.7em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .casilla {
+    height: 40px;
+    width: 35px;
+    margin: 0px 3px 5px 3px;
+    border-bottom: 3px solid black;
+  }
+  .abc{
+    font-size: 1.2em;
+  }
+  .ficha h1{
+    font-size: 1.5em;
+    margin: 3px;
+  }
+}

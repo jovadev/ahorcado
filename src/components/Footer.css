@@ -1,0 +1,49 @@
+footer{
+    border-top: 2px solid black;
+    background: transparent;
+    min-height: calc(15px + 6vmin);
+    width: 100%;
+    font-size: calc(8px + 2vmin);
+    color: #000;
+
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    
+}
+footer div{
+    padding: 10px 15px;
+}
+footer a{
+    color: #0c0c0c;
+}
+.repositorio, footer p{
+    display: inline-block;
+    
+}
+
+.repositorio p, footer p{
+    font-weight: bold;
+}
+.repositorio p{
+    margin: 0;
+}
+.repositorio a:hover{
+    color: rgb(255, 255, 255);
+}
+.repositorio a{
+    color: black;
+    display: inline-block;
+}
+.repositorio a i{
+    font-size: 35px;
+}
+@media screen and (max-width: 500px) {
+    footer{
+      min-height: calc(15px + 6vmin);
+      font-size:1.1em;
+
+    }
+    .repositorio, footer p{
+        display: block;
+    }
+}
